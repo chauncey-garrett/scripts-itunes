@@ -1,6 +1,6 @@
 # Scripts for iTunes
 
-A collection of scripts (including AppleScript) for iTunes I’ve found useful.
+A curated collection of scripts (including AppleScripts) for iTunes.
 
 # Installation
 
