@@ -1,0 +1,265 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+\readonlydoc1\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-CondensedBold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 HelveticaNeue-Medium;
+}
+{\colortbl;\red255\green255\blue255;\red67\green32\blue161;\red0\green0\blue255;\red102\green102\blue102;
+\red38\green38\blue38;\red17\green17\blue17;}
+\margl1440\margr1440\vieww13200\viewh21060\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f0\b\fs84 \cf2 Needle Drop\cf0 \
+
+\fs40 v5.0
+\f1\b0\fs84 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\fs24 \cf0 For iTunes 11+/OS X 10.8+\
+Find more free AppleScripts\
+and info on writing your own\
+at {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/"}}{\fldrslt Doug's AppleScripts for iTunes}}.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f2\fs36 \cf0 This applet plays each track in the selected iTunes playlist for a chosen time interval starting at a chosen number of seconds into each track, beginning with the selected track (if no track is selected then playing will start from the beginning of the selected playlist).\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li180\ri-2167
+\cf0 For OS 10.8 and later only.
+\f1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li180\ri-2134
+
+\fs24 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f2\fs36 \cf0 This script is {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/donate.php"}}{\fldrslt Donationware}}. If you use it and like it please consider making a donation to support my AppleScripting efforts. {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/donate.php"}}{\fldrslt Click here}} for more info.\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f0\b\fs48 \cf3 Installation:
+\f1\b0\fs24 \cf0 \
+\
+This script is a 
+\b Cocoa-AppleScript applet
+\b0  and can be run by double-clicking its icon in the Finder. However, it is probably best accessed from the iTunes Script menu.\
+\
+Put AppleScripts in your iTunes "Scripts" folder. This is located in your 
+\i \cf4 [user name] / Library / iTunes /  
+\i0 \cf0 folder.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li587\fi-5\ri-2155
+
+\i \cf0 The user Library directory is hidden by default. To make it visible, \cf5 hold down the Option key on your keyboard and select 
+\b Go >\'a0Library
+\b0  from the Finder\cf0 .
+\i0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf0 \
+If there is no folder named "Scripts" in the 
+\i \cf4 [user name] / Library / iTunes /  
+\i0 \cf0 folder then create one and put the script(s) in it. AppleScripts will then appear in iTunes' Script menu, and can be activated by selecting by name and clicking. Be sure to also save this Read Me document in a safe and convenient place.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2165
+
+\b \cf0 See the online
+\b0  {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/downloadfaq.php"}}{\fldrslt Download FAQ}} 
+\b for more info and video on downloading and installing AppleScripts.
+\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf0 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f0\b\fs48 \cf3 How to use:
+\f1\b0\fs24 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf6 Select a playlist in iTunes the tracks of which you want 
+\b Needle Drop
+\b0  to play. Optionally, select a track in the playlist from which to begin playing; if no track is selected then play will commence with the first track of the playlist.\
+\
+Launch the 
+\b Needle Drop
+\b0  applet and its main settings window will appear:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 {{\NeXTGraphic Pasted Graphic.tiff \width6760 \height4580
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155\pardirnatural
+\cf0 \
+
+\b \cf3 Enter settings:
+\b0 \cf6 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf6 \
+\pard\tx560\tx586\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li573\ri-2155
+
+\b \cf6 Play each track for seconds
+\b0  - the number of seconds to play each track.\
+\
+
+\b Starting at seconds
+\b0  - (
+\i when checkmarked
+\i0 ) the number of seconds from the beginning of a track to start playing.\
+\
+
+\b Pause before next seconds
+\b0  - (
+\i when checkmarked
+\i0 ) the number of seconds to wait before playing the next track.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf6 \
+\
+Settings are saved between launches.\
+\
+When the settings are acceptable, click the "Engage" button. 
+\b Needle Drop
+\b0  will compel iTunes to play the tracks in the selected playlist in order starting with the first track (or from the first 
+\i selected
+\i0  track).\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\b \cf3 To Quit:
+\b0 \cf6  \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf0 \'95 If iTunes is paused or stopped while 
+\b Needle Drop
+\b0  is engaged then 
+\b Needle Drop
+\b0  will automatically quit.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf6 \
+\'95 Select 
+\b Needle Drop
+\b0  in the Dock and choose Quit from its File menu, or Control-click/Right-click its icon in the Dock and choose Quit from the pop-up.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2163
+\cf0 \
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f0\b\fs48 \cf3 How it works:
+\f1\b0\fs24 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155\pardirnatural
+\cf0 {{\NeXTGraphic Pasted Graphic 1.tiff \width4800 \height2960
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155\pardirnatural
+\cf0 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2163
+\cf0 \
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f0\b\fs48 \cf3 Helpful Links:
+\f1\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\b0 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\b \cf0 Information and download link for this script is located at:
+\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155\pardirnatural
+{\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/scripts/ss.php?sp=needledrop"}}{\fldrslt \cf0 http://dougscripts.com/itunes/scripts/ss.php?sp=needledrop}}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\b \cf0 If you have any trouble with this software, please email me.
+\b0 \
+My name is Doug Adams\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+{\field{\*\fldinst{HYPERLINK "mailto:dougscripts@mac.com"}}{\fldrslt \cf3 \ul \ulc3 dougscripts@mac.com}}\
+\
+Click on the underlined URL text:\
+\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/"}}{\fldrslt Doug's AppleScripts for iTunes}}\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/shortcutkeys.php"}}{\fldrslt Assign Shortcut Keys to AppleScripts}}\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/downloadfaq.php"}}{\fldrslt Download FAQ}} - 
+\b Info on downloading and installing AppleScripts
+\b0 \
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/dougs.rss"}}{\fldrslt Doug's RSS Feed}} - 
+\b Recent site news, script additions and updates
+\b0  (add link to your news reader)\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/dougsupdated.rss"}}{\fldrslt 30 Most Recent RSS Feed}} - 
+\b Most recent new and updated scripts
+\b0  (add link to your news reader)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\b\fs20 \cf0 \
+\
+Version History:
+\b0 \
+\
+
+\b v5.0
+\b0  Oct\cf6  5, 2014
+\b \cf0 \
+
+\b0 - support for OS X 10.10 Yosemite/iTunes 12\
+- drops support for pre-Mountain Lion\
+- add \'93Check for Update\'94 menu command\
+- minor tweaks\
+
+\b \
+
+\b0 v4.1 Oct\cf6  19, 2013
+\b \cf0 \
+
+\b0 - clarifies options UI\
+- fixes minor problem with entering text in pause seconds field\
+
+\b \
+
+\b0 v4.0 Oct\cf6  3, 2013
+\b \cf0 \
+
+\b0 - adds option to set pause time between playing tracks\
+- copes with Up Next behavior\
+- compiled as Cocoa-AppleScript\
+
+\b \
+
+\b0 v3.0 Ap\cf6 ril 29, 2008\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li180\ri-2155
+\cf6 - runs as universal binary\
+- quits (shortly) after iTunes is paused\
+- prevents error and quits properly if first dialog is canceled\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155\pardirnatural
+\cf6 \CocoaLigature0 v2.8 August 27, 2006\
+- fixed\cf0  problem setting player position under some circumstances\
+\
+v2.7 August 15, 2006\
+- asks for how many seconds into a track to start playing, other slight improvements\
+\
+v2.6 October 13, 2004\
+- asks for number of seconds to play each track\
+\
+v2.5 june 12 2003\
+-initial iTunes release\
+-(previous 1.x versions were for SoundJam)\cf6 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf6 \
+this doc last updated Oct 19 2013\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\fs24 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\fs20 \cf0 This software is released "as-is". By using it or modifying it you agree that its author cannot be held responsible or liable for any tragedies resulting thereof.\
+\
+AppleScript, iTunes, iPhone, iPad and iPod are registered trademarks of {\field{\*\fldinst{HYPERLINK "http://www.apple.com"}}{\fldrslt Apple}} Inc.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\fs24 \cf0 \
+}

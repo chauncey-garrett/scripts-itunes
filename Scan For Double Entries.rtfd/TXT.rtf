@@ -1,0 +1,192 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+\readonlydoc1{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-CondensedBold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 HelveticaNeue-Medium;
+}
+{\colortbl;\red255\green255\blue255;\red67\green32\blue161;\red0\green0\blue255;\red102\green102\blue102;
+\red38\green38\blue38;\red17\green17\blue17;\red255\green0\blue0;}
+\margl1440\margr1440\vieww12060\viewh22260\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f0\b\fs84 \cf2 Scan For Double Entries
+\f1\b0\fs36 \cf0 \
+
+\f0\b\fs40 v2.0
+\f1\b0\fs84 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\fs24 \cf0 For iTunes 11+/OS X 10.6+\
+Find more free AppleScripts\
+and info on writing your own\
+at {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/"}}{\fldrslt Doug's AppleScripts for iTunes}}.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f2\fs36 \cf0 This applet will scan your iTunes library for pairs of track entries that\'96very strangely\'96point to the same file and then copy those tracks to a discrete playlist for further examination; presumably you'll want to remove one of the faux pair tracks without Trashing the single associated file.\
+\
+This script is {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/donate.php"}}{\fldrslt Donationware}}. If you use it and like it please consider making a donation to support my AppleScripting efforts. {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/donate.php"}}{\fldrslt Click here}} for more info.
+\f1 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f0\b\fs48 \cf3 Installation:
+\f1\b0\fs24 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2165
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf0 This script is a 
+\b Cocoa-AppleScript applet
+\b0  and can be run by double-clicking its icon in the Finder. However, it is probably best accessed from the iTunes Script menu.\
+\
+Put AppleScripts in your iTunes "Scripts" folder. This is located in your 
+\i \cf4 [user name] / Library / iTunes /  
+\i0 \cf0 folder.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li587\fi-5\ri-2155
+
+\i \cf0 The user Library directory is hidden by default. To make it visible, \cf5 hold down the Option key on your keyboard and select 
+\b Go >\'a0Library
+\b0  from the Finder\cf0 .
+\i0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf0 \
+If there is no folder named "Scripts" in the 
+\i \cf4 [user name] / Library / iTunes /  
+\i0 \cf0 folder then create one and put the script(s) in it. AppleScripts will then appear in iTunes' Script menu, and can be activated by selecting by name and clicking. Be sure to also save this Read Me document in a safe and convenient place.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2165
+
+\b \cf0 See the online
+\b0  {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/downloadfaq.php"}}{\fldrslt Download FAQ}} 
+\b for more info and video on downloading and installing AppleScripts.
+\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf0 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f0\b\fs48 \cf3 What Do You Mean by "Double Entries"?
+\f1\b0\fs24 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf6 Sometime after the release of iTunes 11, some users began to notice an unusual phenomenon after performing some library tidying: the appearance of duplicate library entries that point to the same file. This isn't supposed to happen. iTunes should not allow a file in a unique location to have more than one entry in its database.\
+\
+
+\b I don't know how this condition evolves
+\b0 , but it is certainly related to user errors made while moving media files around and abetted by\'96perhaps\'96some misguided assistance from iTunes 11 and iTunes Match.\
+\
+A user might be tempted to delete one of the two tracks. However, if the single file associated with both track entries is Trashed as well, the surviving track will be rendered a "dead" track. It is a matter of some delicacy.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf0 \
+Regardless of how this situation came to be and how you deal with it, it might be convenient to locate all affected tracks into a temporary playlist for additional scrutiny. That's what the script does.\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f0\b\fs48 \cf3 How to use:
+\f1\b0\fs24 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf6 Make sure iTunes is running and not busy. Launch the script.\
+\
+It will proceed to scan the iTunes library for pairs of tracks that have the same 
+\b Location
+\b0  property. (The current "iTunes Music Library.xml"/"iTunes Library.xml" file will be examined. The location of 
+\i this
+\i0  file is retrieved from your 
+\i /Users/[username]/LibraryPreferences/com.apple.iApps.plist
+\i0  file.)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 {{\NeXTGraphic Pasted Graphic.tiff \width7880 \height3600
+}¬}\cf6 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf6 \
+A new playlist will be created in iTunes named "_Found_Double_Entries" and any 
+\i faux pair 
+\i0 tracks
+\i  
+\i0 will be copied to it.\
+\
+\'95 To stop the scan before it finishes traversing the entire library and then quit, click the 
+\b Cancel
+\b0  button.\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\b \cf7 CAUTION
+\b0 \cf6 : If you intend to weed out the superfluous tracks from your Library be sure to 
+\b just delete one track per pair from iTunes and DO NOT TRASH THE ONE AND ONLY COPY OF THE FILE!
+\b0  This will render the surviving track of the pair as a "dead" track. And, of course, the only copy of the file will be gone.\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155\pardirnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\f0\b\fs48 \cf3 Helpful Links:
+\f1\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\b0 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\b \cf0 Information and download link for this script is located at:
+\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155\pardirnatural
+{\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/scripts/ss.php?sp=needledrop"}}{\fldrslt \cf0 http://dougscripts.com/itunes/scripts/ss.php?sp=scanfordoubleentries}}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\b \cf0 If you have any trouble with this script, please email me.
+\b0 \
+My name is Doug Adams\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+{\field{\*\fldinst{HYPERLINK "mailto:dougscripts@mac.com"}}{\fldrslt \cf3 \ul \ulc3 dougscripts@mac.com}}\
+\
+Click on the underlined URL text:\
+\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/"}}{\fldrslt Doug's AppleScripts for iTunes}}\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/shortcutkeys.php"}}{\fldrslt Assign Shortcut Keys to AppleScripts}}\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/dougs.rss"}}{\fldrslt Doug's RSS Feed}} - 
+\b Recent site news, script additions and updates
+\b0  (add link to your news reader)\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/dougsupdated.rss"}}{\fldrslt 30 Most Recent RSS Feed}} - 
+\b Most recent new and updated scripts
+\b0  (add link to your news reader)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\b\fs20 \cf0 \
+\
+Version History:
+\b0 \
+\
+
+\b v2.0
+\b0  Oct\cf6  18, 2014
+\b \cf0 \
+
+\b0 - initial release\
+\cf6 \
+\cf0 v1.0 Feb\cf6  13, 2014
+\b \cf0 \
+
+\b0 - initial release\
+\cf6 \
+this doc last updated October 18 2014\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\fs24 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\fs20 \cf0 This software is released "as-is". By using it or modifying it you agree that its author cannot be held responsible or liable for any tragedies resulting thereof.\
+\
+AppleScript, iTunes, iPhone, iPad and iPod are registered trademarks of {\field{\*\fldinst{HYPERLINK "http://www.apple.com"}}{\fldrslt Apple}} Inc.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ri-2155
+
+\fs24 \cf0 \
+}

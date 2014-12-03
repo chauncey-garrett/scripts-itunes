@@ -1,0 +1,121 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf320
+\readonlydoc1{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red102\green102\blue102;\red76\green78\blue78;
+\red255\green0\blue0;\red0\green128\blue0;\red17\green17\blue17;}
+\margl1440\margr1440\vieww10460\viewh11460\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\f0\fs84 \cf0 Replay Last Bit 
+\fs36 v2.0
+\fs84 \
+
+\fs36 AppleScript for iTunes\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\fs24 \cf0 \
+\pard\tx160\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+\cf0 Find more 
+\b free
+\b0  AppleScripts\
+and info on writing your own\
+at Doug's AppleScripts\
+\pard\tx160\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+{\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/"}}{\fldrslt \cf0 http://dougscripts.com/itunes/}}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\fs36 \cf0 This script applet runs in the background; when you click its icon in the Dock it 
+\b alternately
+\b0  rewinds the currently playing track by a set number of seconds (the default is 7 seconds) and continues playing 
+\b or
+\b0  pauses the current track. Handy for transcription purposes.\
+\pard\tx160\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li200\fi-20\ql\qnatural
+
+\fs24 \cf0 \
+
+\b This script is {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/donate.php"}}{\fldrslt Donationware}}. If you use it and like it, please consider making a donation to support my AppleScripting efforts. {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/donate.php"}}{\fldrslt Click here}} for more info.
+\b0\fs36 \
+\pard\tx160\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\b\fs24 \cf2 How to use:
+\b0 \cf0 \
+\
+Put this script in your iTunes Scripts folder. This is located in 
+\i \cf3 home > Library > iTunes
+\i0 \cf0 . If there is no Scripts folder there, create one and put the script in it. It will then appear in iTunes' Script Menu, where you can select it by clicking on its name.\
+\
+This is actually an AppleScript application ("applet") that can be run from anywhere on your computer by double-clicking on it, but is probably easier accessed from iTunes' Script menu.\
+\
+Start playing a track in iTunes and run the script. It is an "applet", a mini-application, so its icon will appear in the Dock. The first time you single-click its icon in the Dock it will rewind the currently playing track 7 seconds and then resume playing; the next time you single-click it the current track will pause; and so on, alternating on each click.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\b \cf0 To Quit the applet
+\b0 , Control-click (or right-click) on its icon in the Dock and choose Quit from the pop-up.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\b \cf2 Change the default rewind time:
+\b0 \cf0 \
+\
+Open the script in Script Editor. At the top of the Script Editor window, you will see\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\f1\fs18 \cf0 \CocoaLigature0 --
+\i \cf4  change the number of seconds to rewind if you like
+\i0 \cf0 \
+\cf5 property\cf0  \cf6 secondsToRewind\cf0  : 7\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\f0\fs24 \cf0 \CocoaLigature1 \
+\pard\tx160\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+\cf0 Change 7 to the number of seconds you wish to set the default rewind time to. Save the script (Command-S) and Quit Script Editor. That's it!\
+\
+\pard\tx160\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\b \cf2 Return focus to the application you are typing in:
+\b0 \cf0 \
+\
+Further down in the script you will see this command statement:\
+\
+\pard\tx160\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\f1\fs18 \cf0 \CocoaLigature0 --
+\i \cf4  tell application "Some Application" to activate
+\f0\i0\fs24 \cf0 \CocoaLigature1 \
+\
+Simply replace the "Some Application" phrase with the name of the application you are using (maintaining the quotes) and remove the "--" characters at the start of the line. Save the script (Command-S) and Quit Script Editor. Henceforth, that application will be re-activated (brought to the front) after the script performs its tasks.\
+\
+\pard\tx160\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\i\fs20 \cf7 \CocoaLigature0 v1.0 february 27 2004\
+initial release\
+\
+v2.0 september 9 2004\
+-- runs as a stay-open script\
+-- alternates between pausing and rewinding\
+\pard\tx160\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+\cf7 \CocoaLigature1 \
+this doc last updated \CocoaLigature0 september 9 2004\CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\i0\fs24 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\b \cf0 If you have any trouble with this script, please email me.
+\b0 \
+My name is Doug Adams\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+{\field{\*\fldinst{HYPERLINK "mailto:dougadams@mac.com"}}{\fldrslt \cf2 \ul \ulc2 dougadams@mac.com}}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\fs20 \cf0 This software is released "as-is". By using it or modifying it you agree that its author cannot be held responsible or liable for any tragedies resulting thereof. AppleScript, iTunes, and iPod are registered trademarks of {\field{\*\fldinst{HYPERLINK "http://www.apple.com"}}{\fldrslt Apple Computer}}, Inc.
+\fs24 \
+}
