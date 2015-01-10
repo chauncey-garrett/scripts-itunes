@@ -6,13 +6,13 @@ A curated collection of scripts (including AppleScripts) that I have either made
 
 Fork the repo then install with:
 
-```
+```sh
 git clone https://github.com/chauncey-garrett/scripts-itunes.git $HOME/Library/iTunes/Scripts
 ```
 
 If you plan on contributing back to the repository, add the following to `.git/config` **before making any commits.** This code will ensure that the AppleScripts are viewable under version control by decompiling them to plain text before updating the repository.
 
-```
+```sh
 [filter "ascr"]
 	clean = "$(git rev-parse --show-toplevel)"/git-ascr-filter.sh --clean %f
 	smudge = "$(git rev-parse --show-toplevel)"/git-ascr-filter.sh --smudge %f
