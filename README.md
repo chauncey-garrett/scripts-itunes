@@ -10,12 +10,12 @@ noindex: false
 permalink: /projects/scripts/itunes/
 external-url:
 tags:
-- scripts
-- github
-- itunes
+  - scripts
+  - github
+  - itunes
 category: project
 description: Scripts for iTunes.
-keywords: TODO
+keywords:
 sharing: true
 comments: false
 footer: true
