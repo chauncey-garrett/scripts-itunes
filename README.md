@@ -24,11 +24,11 @@ footer: true
 * Table of Contents placeholder (via kramdown)
 {:toc}
 
-# Scripts for iTunes
+## Scripts for iTunes
 
 A curated collection of scripts (including AppleScripts) that I have either made and/or commandeered for iTunes.
 
-# Installation
+## Installation
 
 Fork the repo then install with:
 
@@ -44,11 +44,11 @@ If you plan on contributing back to the repository, add the following to `.git/c
 	smudge = "$(git rev-parse --show-toplevel)"/git-ascr-filter.sh --smudge %f
 ```
 
-# Like it?
+## Like it?
 
 If you have feature suggestions, please open an [issue](https://github.com/chauncey-garrett/scripts-itunes/issues "chauncey-garrett/scripts-itunes/issues"). If you have contributions, open a [pull request](https://github.com/chauncey-garrett/scripts-itunes/pull-request "chauncey-garrett/scripts-itunes/pulls"). I'd love to expand this library as much as is possible.
 
-# Author(s)
+## Author(s)
 
 Note that there are scripts here that I did NOT make and have only curated with this repository. If you found a particular script useful, please send your support to that particular author. Appropriate licensing and authorship information is provided for those scripts which I have not written.
 
