@@ -8,18 +8,22 @@
 	<string>Unfinished Podcast Episodes</string>
 	<key>WindowState</key>
 	<dict>
-		<key>dividerCollapsed</key>
+		<key>bundleDividerCollapsed</key>
 		<true/>
+		<key>bundlePositionOfDivider</key>
+		<real>0.0</real>
+		<key>dividerCollapsed</key>
+		<false/>
 		<key>eventLogLevel</key>
 		<integer>2</integer>
 		<key>name</key>
 		<string>ScriptWindowState</string>
 		<key>positionOfDivider</key>
-		<real>867</real>
+		<real>834</real>
 		<key>savedFrame</key>
-		<string>268 56 1154 972 0 0 1680 1028 </string>
-		<key>selectedTabView</key>
-		<string>event log</string>
+		<string>716 445 1154 972 0 0 2560 1417 </string>
+		<key>selectedTab</key>
+		<string>log</string>
 	</dict>
 </dict>
 </plist>
