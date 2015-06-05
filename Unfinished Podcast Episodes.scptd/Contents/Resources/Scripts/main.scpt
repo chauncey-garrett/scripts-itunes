@@ -9,6 +9,7 @@ v1.0 june 24, 2014
 Get more free AppleScripts and info on writing your own
 at Doug's AppleScripts for iTunes
 dougscripts.com
+
 *)
 
 property collectionPlaylistName : "[-Unfinished Podcast Episodes>"
@@ -50,5 +51,4 @@ on makeCollectionPlaylist()
 		return newPlaylist
 	end tell
 end makeCollectionPlaylist
-
 

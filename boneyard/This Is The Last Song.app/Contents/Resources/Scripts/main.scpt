@@ -30,7 +30,6 @@ or visit http://www.gnu.org/copyleft/gpl.html
 
 *)
 
-
 property int : 0.5
 global finishTime, initialCurrentTrack
 

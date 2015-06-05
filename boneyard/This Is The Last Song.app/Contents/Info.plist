@@ -3,23 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.ScriptEditor.id.Unfinished-Podcast-Episodes</string>
-	<key>CFBundleName</key>
-	<string>Unfinished Podcast Episodes</string>
+	<string>com.apple.ScriptEditor.id.90D8B7D5-86EA-4908-97D5-9F1252976317</string>
 	<key>WindowState</key>
 	<dict>
-		<key>dividerCollapsed</key>
+		<key>bundleDividerCollapsed</key>
 		<true/>
+		<key>bundlePositionOfDivider</key>
+		<real>0.0</real>
+		<key>dividerCollapsed</key>
+		<false/>
 		<key>eventLogLevel</key>
 		<integer>2</integer>
 		<key>name</key>
 		<string>ScriptWindowState</string>
 		<key>positionOfDivider</key>
-		<real>867</real>
+		<real>421</real>
 		<key>savedFrame</key>
-		<string>268 56 1154 972 0 0 1680 1028 </string>
-		<key>selectedTabView</key>
-		<string>event log</string>
+		<string>520 294 700 672 0 0 2560 1417 </string>
+		<key>selectedTab</key>
+		<string>description</string>
 	</dict>
 </dict>
 </plist>

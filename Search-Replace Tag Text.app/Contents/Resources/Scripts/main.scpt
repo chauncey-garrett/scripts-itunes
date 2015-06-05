@@ -127,4 +127,3 @@ on isFullScreen()
 	end try
 end isFullScreen
 
-

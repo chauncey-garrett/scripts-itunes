@@ -61,6 +61,10 @@
 	<string>NSApplication</string>
 	<key>WindowState</key>
 	<dict>
+		<key>bundleDividerCollapsed</key>
+		<true/>
+		<key>bundlePositionOfDivider</key>
+		<real>0.0</real>
 		<key>dividerCollapsed</key>
 		<false/>
 		<key>eventLogLevel</key>
@@ -70,9 +74,9 @@
 		<key>positionOfDivider</key>
 		<real>448</real>
 		<key>savedFrame</key>
-		<string>79 617 887 777 0 0 2560 1418 </string>
-		<key>selectedTabView</key>
-		<string>event log</string>
+		<string>79 616 887 777 0 0 2560 1417 </string>
+		<key>selectedTab</key>
+		<string>log</string>
 	</dict>
 </dict>
 </plist>
